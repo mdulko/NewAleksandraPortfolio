@@ -1,9 +1,9 @@
 import React, { lazy, Suspense } from "react";
 import { Switch, Route, Redirect } from "react-router-dom";
-import PageLoader from "../../components/small/Loading/Loading";
+import PageLoader from "../components/small/Loading/Loading";
 
-const Home = lazy(() => import("views/Home/Home"));
-const NotFound = lazy(() => import("views/NotFound/NotFound"));
+const Home = lazy(() => import("../views/Home/Home"));
+const NotFound = lazy(() => import("../views/NotFound/NotFound"));
 
 const Routes = () => (
   <Suspense fallback={<PageLoader />}>
