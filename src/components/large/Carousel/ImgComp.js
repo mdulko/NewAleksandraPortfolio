@@ -1,11 +1,11 @@
 import React from "react";
 
-function ImgComp({ src, id }) {
+const ImgComp = ({ src }) => {
   const styleImg = {
-    width: 80 + "%",
+    width: 100 + "%",
     height: "auto",
   };
-  return <img src={src} alt="" id={id} style={styleImg}></img>;
-}
+  return <img src={src} alt="" style={styleImg}></img>;
+};
 
 export default ImgComp;
