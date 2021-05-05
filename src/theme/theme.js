@@ -11,6 +11,8 @@ const themes = {
   palette: {
     white: "hsl(0, 0%, 100%)",
     black: "hsl(0, 0%, 0%)",
+    red: "hsl(0, 71%, 34%)",
+    onHover: "hsl(0, 0%, 91%)",
   },
   typography: {
     fontFamily: "'Montserrat', sans-serif",
