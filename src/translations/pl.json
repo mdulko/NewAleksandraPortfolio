@@ -1,5 +1,16 @@
 {
-  "navTitles": ["Wizualizacje", "Meble", "Inne Projekty", "Pomieszczenia"],
+  "navTopics": {
+    "home": { "name": "Strona Główna", "to": "/" },
+    "projects": { "name": "Projekty", "to": "/projects" },
+    "about": { "name": "O mnie", "to": "/about" },
+    "contact": { "name": "Kontakt", "to": "/contact" }
+  },
+  "navProjetsTitles": [
+    "Wizualizacje",
+    "Meble",
+    "Inne Projekty",
+    "Pomieszczenia"
+  ],
   "projects": [
     [
       {

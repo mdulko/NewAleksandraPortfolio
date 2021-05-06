@@ -1,7 +1,9 @@
 import React, { useState, useEffect } from "react";
 import PropTypes from "prop-types";
 import ImgComp from "./ImgComp";
-import { makeStyles, Box, Container } from "@material-ui/core";
+import { makeStyles, Box } from "@material-ui/core";
+import ArrowBackIosOutlinedIcon from "@material-ui/icons/ArrowBackIosOutlined";
+import ArrowForwardIosOutlinedIcon from "@material-ui/icons/ArrowForwardIosOutlined";
 
 const useStyles = makeStyles((theme) => ({
   mainBox: {
@@ -37,22 +39,31 @@ const useStyles = makeStyles((theme) => ({
     margin: "0 5px",
     border: "1px solid hsl(0, 0%, 80%)",
   },
+  goLeft: {
+    display: "flex",
+    alignItems: "center",
+    position: "relative",
+    padding: "0 20px",
+    zIndex: 10,
+    cursor: "pointer",
+  },
 }));
 const Carousel = ({ imgArray, list }) => {
   const classes = useStyles();
   const [x, setX] = useState(0);
+  const arrayLength = imgArray.length;
   const goLeft = () => {
-    x === 0 ? setX(-100 * (imgArray.length - 1)) : setX(x + 100);
+    x === 0 ? setX(-100 * (arrayLength - 1)) : setX(x + 100);
   };
   const goRight = () => {
-    x === -100 * (imgArray.length - 1) ? setX(0) : setX(x - 100);
+    x === -100 * (arrayLength - 1) ? setX(0) : setX(x - 100);
   };
   const time = 3000;
 
   useEffect(() => {
     const changeSlide = () => {
       setX(x - 100);
-      x === -100 * (imgArray.length - 1) ? setX(0) : setX(x - 100);
+      x === -100 * (arrayLength - 1) ? setX(0) : setX(x - 100);
     };
     const intervalChange = setInterval(() => {
       changeSlide();
@@ -85,12 +96,20 @@ const Carousel = ({ imgArray, list }) => {
             </div>
           );
         })}
-        <button className="goLeft" onClick={goLeft}>
-          Left
-        </button>
-        <button className="goRight" onClick={goRight}>
-          Right
-        </button>
+        <div
+          className={classes.goLeft}
+          style={{ left: `calc(-${arrayLength} * 100%` }}
+          onClick={goLeft}
+        >
+          <ArrowBackIosOutlinedIcon fontSize="large"></ArrowBackIosOutlinedIcon>
+        </div>
+        <div
+          className={classes.goLeft}
+          style={{ right: `calc(${arrayLength - 1} * 100% + 150px` }}
+          onClick={goRight}
+        >
+          <ArrowForwardIosOutlinedIcon fontSize="large"></ArrowForwardIosOutlinedIcon>
+        </div>
       </Box>
       {list && (
         <Box className={classes.imagesInRow}>

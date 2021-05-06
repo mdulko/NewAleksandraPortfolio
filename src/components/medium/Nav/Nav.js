@@ -1,11 +1,12 @@
 import React, { useState } from "react";
-import { AppBar, makeStyles, Box, Button } from "@material-ui/core";
+import { AppBar, makeStyles, Box, Button, Link } from "@material-ui/core";
 import styled, { css } from "styled-components";
 import Text from "../../small/Text/Text";
 import themes from "../../../theme/theme";
 import pl from "../../../translations/pl.json";
 import MenuIcon from "@material-ui/icons/Menu";
 import CloseIcon from "@material-ui/icons/Close";
+import LinkTo from "../../small/LinkTo/LinkTo";
 
 const AppBarStyled = styled(AppBar)`
   ${({ theme }) => css`
@@ -28,6 +29,7 @@ const BoxStyled = styled(Box)`
   ${() => css`
     background-color: ${themes.palette.white};
     position: absolute;
+    z-index: 100;
   `}
 `;
 const BoxStyledSecond = styled(Box)`
@@ -36,6 +38,7 @@ const BoxStyledSecond = styled(Box)`
     text-align: start;
     font-weight: 500;
     cursor: pointer;
+    z-index: 100;
     :hover {
       color: ${themes.palette.red};
       background-color: ${themes.palette.onHover};
@@ -54,6 +57,7 @@ const BoxStyledLi = styled(Box)`
     position: absolute;
     text-align: start;
     right: 0;
+    z-index: 100;
     transform: translate(100%, -42px);
     ${theme.breakpoints.down("xs")} {
       position: relative;
@@ -107,6 +111,7 @@ const useStyles = makeStyles((theme) => ({
   navTitle: {
     padding: theme.spacing(0, 2),
     margin: theme.spacing(0, 6),
+
     [theme.breakpoints.down("md")]: {
       margin: theme.spacing(0, 2),
     },
@@ -131,7 +136,7 @@ const useStyles = makeStyles((theme) => ({
       backgroundColor: "hsl(0, 0%, 100%)",
       position: "fixed",
       width: "100%",
-      zIndex: "100000",
+      zIndex: "100",
     },
   },
 }));
@@ -148,7 +153,7 @@ const Nav = () => {
     );
   };
 
-  const projectList = pl.navTitles.map((item, index) => {
+  const projectList = pl.navProjetsTitles.map((item, index) => {
     const projectElement = pl.projects[index].map((element, index) => (
       <Text key={index}>{displayButton(element.name)}</Text>
     ));
@@ -199,7 +204,7 @@ const Nav = () => {
       >
         <Box className={`${classes.mainBox} ${classes.title}`}>
           <Text variant="h6" className={classes.navTitle}>
-            Strona Główna
+            <LinkTo to={pl.navTopics.home.to} label={pl.navTopics.home.name} />
           </Text>
           <Box>
             <Text
@@ -210,15 +215,21 @@ const Nav = () => {
                 setIsTextSame("");
               }}
             >
-              Moje Projekty
+              <LinkTo label={pl.navTopics.projects.name} />
             </Text>
             {openProjectList && <BoxStyled>{projectList}</BoxStyled>}
           </Box>
           <Text variant="h6" className={classes.navTitle}>
-            O mnie
+            <LinkTo
+              to={pl.navTopics.about.to}
+              label={pl.navTopics.about.name}
+            />
           </Text>
           <Text variant="h6" className={classes.navTitle}>
-            Kontakt
+            <LinkTo
+              to={pl.navTopics.contact.to}
+              label={pl.navTopics.contact.name}
+            />
           </Text>
         </Box>
       </AppBarStyled>

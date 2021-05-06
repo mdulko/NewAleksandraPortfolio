@@ -27,7 +27,7 @@ const Home = () => {
 
   return (
     <Box className={classes.mainBox}>
-      <Carousel imgArray={images} list />
+      <Carousel imgArray={images} />
     </Box>
   );
 };
