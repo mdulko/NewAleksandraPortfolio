@@ -19,11 +19,11 @@ const RoomsRoutes = () => (
       <Route exact path={`/projects/rooms`} component={VisualizationsHome} />
       <Route path={`/projects/rooms/reading-room`} component={ReadingRoom} />
       <Route
-        path={`/projects/rooms/kitchen-template-1`}
+        path={`/projects/rooms/kitchen-design-1`}
         component={KitchenTemplate1}
       />
       <Route
-        path={`/projects/rooms/kitchen-template-2`}
+        path={`/projects/rooms/kitchen-design-2`}
         component={KitchenTemplate2}
       />
     </Switch>

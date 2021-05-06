@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { AppBar, makeStyles, Box, Button, Link } from "@material-ui/core";
+import { AppBar, makeStyles, Box, Button } from "@material-ui/core";
 import styled, { css } from "styled-components";
 import Text from "../../small/Text/Text";
 import themes from "../../../theme/theme";
@@ -155,18 +155,18 @@ const Nav = () => {
 
   const projectList = pl.navProjetsTitles.map((item, index) => {
     const projectElement = pl.projects[index].map((element, index) => (
-      <Text key={index}>{displayButton(element.name)}</Text>
+      <Text key={index}>
+        {displayButton(<LinkTo to={element.url} label={element.name} />)}
+      </Text>
     ));
     return (
-      <BoxStyledSecond key={index}>
-        <Text
-          variant="h6"
-          onClick={() => {
-            setIsTextSame(item);
-          }}
-        >
-          {item}
-        </Text>
+      <BoxStyledSecond
+        key={index}
+        onClick={() => {
+          setIsTextSame(item);
+        }}
+      >
+        <Text variant="h6">{item}</Text>
         {isTextSame === item && (
           <BoxStyledLi
             onClick={() => {
