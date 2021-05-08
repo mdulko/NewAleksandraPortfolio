@@ -10,6 +10,7 @@ const themes = {
   },
   palette: {
     white: "hsl(0, 0%, 100%)",
+    gray: "hsla(0, 0%, 100%, .56)",
     black: "hsl(0, 0%, 0%)",
     red: "hsl(0, 71%, 34%)",
     onHover: "hsl(0, 0%, 91%)",

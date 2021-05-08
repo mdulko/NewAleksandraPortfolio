@@ -2,10 +2,10 @@ import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import Carousel from "../../components/large/Carousel/Carousel";
 import { Box } from "@material-ui/core";
+import Title from "../../components/small/Title/Title";
 
 const useStyles = makeStyles((theme) => ({
   mainBox: {
-    minHeight: "200vh",
     justifyContent: "center",
   },
 }));
@@ -27,6 +27,7 @@ const Home = () => {
 
   return (
     <Box className={classes.mainBox}>
+      <Title>Title</Title>
       <Carousel imgArray={images} />
     </Box>
   );

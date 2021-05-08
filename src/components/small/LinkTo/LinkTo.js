@@ -14,4 +14,5 @@ const LinkStyled = styled(Link)`
 `;
 
 const LinkTo = ({ to, label }) => <LinkStyled href={to}>{label}</LinkStyled>;
+
 export default LinkTo;
