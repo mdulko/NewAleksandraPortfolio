@@ -1,10 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
 import PropTypes from "prop-types";
 import { Box, CssBaseline, NoSsr, StylesProvider } from "@material-ui/core";
 import Nav from "../components/medium/Nav/Nav";
 import MainTheme from "../theme/MainTheme";
 import { makeStyles } from "@material-ui/core/styles";
 import Footer from "../components/medium/Footer/Footer";
+import pl from "../translations/pl.json";
+import en from "../translations/en.json";
 
 const useStyles = makeStyles((theme) => ({
   mainBox: {
@@ -18,13 +20,21 @@ const useStyles = makeStyles((theme) => ({
 
 const MainTemplate = ({ children }) => {
   const classes = useStyles();
+  const [ln, setLanguage] = useState(pl);
+
+  const PL = () => {
+    setLanguage(pl);
+  };
+  const ENG = () => {
+    setLanguage(en);
+  };
   return (
     <NoSsr>
       <MainTheme>
         <StylesProvider>
           <CssBaseline />
-          <Nav />
-          <Box mb={8} className={classes.mainBox}>
+          <Nav ln={ln} PL={PL} ENG={ENG} />
+          <Box mb={8} ln={ln} className={classes.mainBox}>
             {children}
           </Box>
           <Footer />

@@ -4,9 +4,11 @@ import styled, { css } from "styled-components";
 import Text from "../../small/Text/Text";
 import themes from "../../../theme/theme";
 import pl from "../../../translations/pl.json";
+import en from "../../../translations/en.json";
 import MenuIcon from "@material-ui/icons/Menu";
 import CloseIcon from "@material-ui/icons/Close";
 import LinkTo from "../../small/LinkTo/LinkTo";
+import ImgComp from "../../small/ImgComp/ImgComp";
 
 const AppBarStyled = styled(AppBar)`
   ${({ theme }) => css`
@@ -90,7 +92,9 @@ const ButtonStyled = styled(Button)`
 const useStyles = makeStyles((theme) => ({
   mainBox: {
     display: "flex",
+    width: "100%",
     justifyContent: "center",
+    alignItems: "center",
     position: "relative",
     padding: theme.spacing(1, 0),
     [theme.breakpoints.down("xs")]: {
@@ -139,9 +143,35 @@ const useStyles = makeStyles((theme) => ({
       zIndex: "100",
     },
   },
+  language: {
+    display: "flex",
+    position: "absolute",
+    right: 0,
+    marginRight: theme.spacing(10),
+    [theme.breakpoints.down("md")]: {
+      marginRight: theme.spacing(3),
+    },
+    [theme.breakpoints.down("sm")]: {
+      marginRight: theme.spacing(1),
+    },
+    [theme.breakpoints.down("xs")]: {
+      marginRight: theme.spacing(5),
+    },
+  },
+  lnItem: {
+    width: "20px",
+    height: "20px",
+    marginRight: theme.spacing(1),
+    cursor: "pointer",
+    "& img": {
+      border: "1px solid black",
+      borderRadius: "50%",
+      width: "100%",
+    },
+  },
 }));
 
-const Nav = () => {
+const Nav = ({ ln, PL, ENG }) => {
   const classes = useStyles();
   const [isTextSame, setIsTextSame] = useState("");
   const [openProjectList, setOpenProjectList] = useState(false);
@@ -153,8 +183,8 @@ const Nav = () => {
     );
   };
 
-  const projectList = pl.navProjetsTitles.map((item, index) => {
-    const projectElement = pl.projects[index].map((element, index) => (
+  const projectList = ln.navProjetsTitles.map((item, index) => {
+    const projectElement = ln.projects[index].map((element, index) => (
       <Text key={index}>
         {displayButton(<LinkTo to={element.url} label={element.name} />)}
       </Text>
@@ -204,7 +234,7 @@ const Nav = () => {
       >
         <Box className={`${classes.mainBox} ${classes.title}`}>
           <Text variant="h6" className={classes.navTitle}>
-            <LinkTo to={pl.navTopics.home.to} label={pl.navTopics.home.name} />
+            <LinkTo to={ln.navTopics.home.to} label={ln.navTopics.home.name} />
           </Text>
           <Box>
             <Text
@@ -215,22 +245,31 @@ const Nav = () => {
                 setIsTextSame("");
               }}
             >
-              <LinkTo label={pl.navTopics.projects.name} />
+              <LinkTo label={ln.navTopics.projects.name} />
             </Text>
             {openProjectList && <BoxStyled>{projectList}</BoxStyled>}
           </Box>
           <Text variant="h6" className={classes.navTitle}>
             <LinkTo
-              to={pl.navTopics.about.to}
-              label={pl.navTopics.about.name}
+              to={ln.navTopics.about.to}
+              label={ln.navTopics.about.name}
             />
           </Text>
           <Text variant="h6" className={classes.navTitle}>
             <LinkTo
-              to={pl.navTopics.contact.to}
-              label={pl.navTopics.contact.name}
+              to={ln.navTopics.contact.to}
+              label={ln.navTopics.contact.name}
             />
           </Text>
+
+          <Box className={classes.language}>
+            <Box className={classes.lnItem} onClick={PL}>
+              <ImgComp src="./img/PL.png" alt="" />
+            </Box>
+            <Box className={classes.lnItem} onClick={ENG}>
+              <ImgComp src="./img/UK.png" alt="" />
+            </Box>
+          </Box>
         </Box>
       </AppBarStyled>
     </>

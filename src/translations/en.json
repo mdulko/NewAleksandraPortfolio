@@ -1,0 +1,79 @@
+{
+  "navTopics": {
+    "home": { "name": "Home", "to": "/" },
+    "projects": { "name": "Projects", "to": "/projects" },
+    "about": { "name": "About me", "to": "/about" },
+    "contact": { "name": "Contact", "to": "/contact" }
+  },
+  "navProjetsTitles": [
+    "Visualizations",
+    "Furnitures",
+    "Other Projects",
+    "Rooms"
+  ],
+  "projects": [
+    [
+      {
+        "name": " Microhome 2020",
+        "url": "/projects/visualizations/microhome-2020",
+        "title": "Projekt konkursowy - Microhome 2020",
+        "description": "Założeniem projektowym było stworzenie domu mieszkalnego dla młodej pary. Posiada on: kuchnię, miejsce do pracy, sypialnię (antresola), łazienkę i małą szafę. Cały dom jest niebieski i jego wyposażenie jest monochromatyczne. Wyjątkiem jest drewniany stół z dwoma krzesłami. Mają one nawiązywać do domu rodzinnego, wspomnień i dzieciństwa. Cała elewacja jest przeszklona tak, aby jak najwięcej światła dostało się do środka. Fasada ma jeszcze jedno zadanie, zintegrować wnętrze i zewnętrze - kiedy użytkownik wychodzi na zewnątrz to wychodzi razem z funkcjami domu. Ma to być intuicyjne pragnienie bycia blisko natury. Wyposażenie ma również swoje zadanie. Gdy żaden mieszkaniec nie korzysta z żadnej ze stref - są one zamknięte lub ukryte, ale kiedy chce z nich korzystać - otwiera je. Kuchnia ma dodatkowy blat ukryty w ścianie, a w pozornej szafie i miejscu wypoczynku jest ukryte biurko przeznaczone do pracy przy komputerze... Kiedy użytkownik chce pracować, przenosi krzesło z kuchni do drugiego pokoju i tam pracuje. Możliwe jest również kontynuowanie go w innym miejscu. Wystarczy otworzyć drzwi tarasowe i przejść z miejsca pracy na mini taras. Dom ma dach jednospadowy. Jest on tańszy i łatwiejszy do wykonania. Można też zbierać wodę deszczową i wykorzystać ją do pracy np. w ogrodzie (aksonometria). Duża ilość okien pozwoli na ocieplenie domu. Szanując przyrodę, projekt zużywa mniej materiału. Jeden mebel ma kilka funkcji."
+      },
+      {
+        "name": "mini LAB",
+        "url": "/projects/visualizations/minilab",
+        "description": "Ideą mini laboratorium(miniLAB) ma za zadanie wyostrzyć zmysły obserwacji pobudzić dziecko do działania indywidualnie oraz w grupie, ale przede wszystkim pomóc odkryć w nim pierwiastek twórczy, dociekając przy tym piękną również w małych rzeczach i ich detalu. Program przeprowadzonych warszatatów będzie sporządzony w taki sposób, aby jego uczestnicy wraz z gościnnym projektantem mogliby wspólnie tworzyć ideę istnienia małej pracowni, gdzie każdy z nich pełny ważną rolę. Przestrzeń będzie zaprojektowana w taki sposób, aby użytkownicy czuli się w niej swobodnie.",
+        "subDescription": "Estetyczne zestawienie kolorystyczne oraz czytelne formy przestrzenne nadadzą wnętrzom charakteru, w których dziecko nie będzie rozproszone, lecz skupione i chętne do działania. Droga procesu projektowego od idei, poprzez projektowanie ma za zadanie sprawić, by dziecko czułoby się równie ważne jak prawdziwy projektant. W ten sposób powinno zaowocować poprawę samooceny, wspólnej integracji, rozwoju wrażliwości i swobodnej twórczości nawet u najmłodszych."
+      },
+      {
+        "name": "Realizacja mieszkania",
+        "url": "/projects/visualizations/zukowo",
+        "location": "Gdańsk, Żukowo",
+        "area": "86m2",
+        "destiny": "Projekt mieszkania dla rodziny 4-osobowej"
+      }
+    ],
+    [
+      {
+        "name": "Stolik kawowy",
+        "url": "/projects/furnitures/coffee-table",
+        "title": "Projekt stolika kawowego",
+        "description": "Zaprojektowany przeze mnie stolik kawowy powstał z założeniem wkomponowania go do wybranej przestrzeni mieszkalnej. Jest nią salon w XVII-wiecznym katalońskim domu w Hiszpanii. Cały obiekt jest wykonany z kamienia naturalnego o różnej strukturze. Założeniem projektowym stolika była przede wszystkim forma i funkcja. Ze względu na kubaturę wybranego pomieszczenia zdecydowałam się na zaprojektowanie dwóch stolików, które po zespoleniu tworzą wspólną całość. Bryła ma nawiązywać do uproszczonej formy naturalnego kamienia, dlatego też krawędzie stolików prowadzone są po delikatnym łuku, a wykorzystane przeze mnie drewno jesionowe oraz malowane na czarny mat stalowe nogi nawiązują do kontrastujących sobie cech domu jakimi są surowość, miękkość, delikatność."
+      },
+      {
+        "name": "Proste siedzisko",
+        "url": "/projects/furnitures/simple-seat",
+        "description": "Projekt powstał z założeniem wykorzystania jak największej ilości odpadów materiału. Jest to mebel który można złożyć bez użycia dodatkowych narzędzi."
+      },
+      {
+        "name": "Siedzisko 'łezka'",
+        "url": "/projects/furnitures/tear-seat",
+        "description": "Projekt mebla modułowego DROP kształtem przypominający kroplę wody, powstał z przeznaczeniem do wykorzystania między innymi w miejscach publicznych. Głównym założeniem projektowym było umożliwienie użytkownikowi zaaranżowanie siedzisk w własny, kreatywny układ. Kolekcja siedzisk modułowych świetnie rozwija wyobraźnię dzieci, uczy kreatywności oraz współpracy. Kolekcja składa się z trzech podstawowych modułów o tej samej formie, natomiast o różnych wysokościach: 30/40/45 cm. Stabilne siedziska zostają obite materiałem o wysokiej jakości (tkanina Ballagie velvet col. 07, 19, 23).",
+        "subDescription": "Bryła siedziska powstała z inspiracji naturalnymi formami przyrody jak kształt szyszki. Zbudowana jest ona z powtarzających się elementów, które pomimo zwiększającej się skali tworzą zespoloną, ciekawą formę. Wysokości siedzisk są zróżnicowane ze względów ergonomicznych. Przeznaczone są dla dzieci jak i dorosłych. Dlatego modułowe siedziska DROP są wygodne i dostosowane dla każdego. Dzięki wyprofilowanemu kształtowi, który powstał na bazie dwóch okręgów, siedziska można łączyć ze sobą w zależności od potrzeb, tworząc wiele ciekawych kompozycji."
+      }
+    ],
+    [
+      {
+        "name": "Ściana dekoracyjna 'Magia'",
+        "url": "/projects/other/decorative-wall-Magia",
+        "description": "Projekt i realizacja ściany dekoracyjnej w salonie fryzjerskim ,,Magia,,"
+      }
+    ],
+    [
+      {
+        "name": "Reading Room",
+        "url": "/projects/rooms/reading-room",
+        "description": "Założeniem projektu było zagospodarowanie przestrzeni publicznej w formie czytelni. Jest to miejsce specjalistyczne, gdzie znajdują się książki, audiobooki, publikacje i albumy, wyłącznie o tematyce botanicznej. Czytelnia botaniczna swoją kolorystyką i formą ma za zadanie odprężać i wyciszać. Celowy zabieg ustawienia siedzisk ma za zadanie tworzyć dodatkowy komfort dla czytelnika, tak, żeby każdy mógł znaleźć miejsce dla siebie. Główną inspiracją projektu była analiza struktur roślin pod mikroskopem. Ich organiczna forma nakierowała mnie do zaprojektowaia przestrzeni o charakterze płynnym, falistym i lekkim. Wnętrza są wypełnione tkaninami począwszy od posadzki kończąc na siedziskach w kontraście z metalowymi rurkami w barwach natury. Tworzą one formę, w której znajdują się miejsca przeznaczone na książki."
+      },
+      {
+        "name": "Kuchnia nr.1 - wzór",
+        "url": "/projects/rooms/kitchen-design-1"
+      },
+      {
+        "name": "Kuchnia nr.2 - wzór",
+        "url": "/projects/rooms/kitchen-design-2"
+      }
+    ]
+  ],
+  "copyrights": "© 2020 Design & Developed by Michał Dulko. All rights reserved."
+}
