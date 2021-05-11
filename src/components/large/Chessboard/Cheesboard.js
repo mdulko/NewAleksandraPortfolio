@@ -51,7 +51,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-const Chessboard = ({ boxArray, language }) => {
+const Chessboard = ({ boxArray, language, ln }) => {
   const classes = useStyles();
   const stylesEven = {
     backgroundColor: "#21202670",
@@ -112,55 +112,16 @@ const Chessboard = ({ boxArray, language }) => {
       <Container maxWidth="xl">
         <Title>mini LAB</Title>
         <div className="underline"></div>
-        {language ? (
-          <>
-            <Text align="justify">
-              Ideą mini laboratorium(miniLAB) ma za zadanie wyostrzyć zmysły
-              obserwacji pobudzić dziecko do działania indywidualnie oraz w
-              grupie, ale przede wszystkim pomóc odkryć w nim pierwiastek
-              twórczy, dociekając przy tym piękną również w małych rzeczach i
-              ich detalu. Program przeprowadzonych warszatatów będzie
-              sporządzony w taki sposób, aby jego uczestnicy wraz z gościnnym
-              projektantem mogliby wspólnie tworzyć ideę istnienia małej
-              pracowni, gdzie każdy z nich pełny ważną rolę. Przestrzeń będzie
-              zaprojektowana w taki sposób, aby użytkownicy czuli się w niej
-              swobodnie.
-            </Text>
-            <Text align="justify">
-              Estetyczne zestawienie kolorystyczne oraz czytelne formy
-              przestrzenne nadadzą wnętrzom charakteru, w których dziecko nie
-              będzie rozproszone, lecz skupione i chętne do działania. Droga
-              procesu projektowego od idei, poprzez projektowanie ma za zadanie
-              sprawić, by dziecko czułoby się równie ważne jak prawdziwy
-              projektant. W ten sposób powinno zaowocować poprawę samooceny,
-              wspólnej integracji, rozwoju wrażliwości i swobodnej twórczości
-              nawet u najmłodszych.
-            </Text>
-          </>
-        ) : (
-          <>
-            <Text align="justify">
-              The idea of mini lab (miniLAB) is to sharpen the senses to
-              stimulate the child to act individually and in group, but most
-              importantly, help to discover the creative element in it, while
-              also exploring the beautiful in my things and their details. The
-              program of the workshops will be prepared in such a way that its
-              participants together with the guest designer could together
-              create the idea of a small studio where each of them a full role.
-              The space will be designed this way, so that users can feel
-              comfortable in it.
-            </Text>
-            <Text align="justify">
-              Aesthetic color combination and legible forms spatial will give
-              the interiors a character, in which the child does not will be
-              dispersed, but focused and willing to act. Route the design
-              process from idea to design has the task of to make the child feel
-              as important as the real one designer. In this way it should
-              result in improved self-esteem, common integration, development of
-              sensitivity and free creation even in the youngest.
-            </Text>
-          </>
-        )}
+        <Text align="justify">{ln.projects[2].description}</Text>
+        <Text align="justify">
+          Estetyczne zestawienie kolorystyczne oraz czytelne formy przestrzenne
+          nadadzą wnętrzom charakteru, w których dziecko nie będzie rozproszone,
+          lecz skupione i chętne do działania. Droga procesu projektowego od
+          idei, poprzez projektowanie ma za zadanie sprawić, by dziecko czułoby
+          się równie ważne jak prawdziwy projektant. W ten sposób powinno
+          zaowocować poprawę samooceny, wspólnej integracji, rozwoju wrażliwości
+          i swobodnej twórczości nawet u najmłodszych.
+        </Text>
       </Container>
       <Box className={classes.columnsBox}>{showImages}</Box>
     </>

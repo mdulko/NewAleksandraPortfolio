@@ -1,7 +1,7 @@
 import React from "react";
 import Chessboard from "../../../components/large/Chessboard/Cheesboard";
 
-const Microhome = () => {
+const Microhome = ({ ln }) => {
   const boxArr = [
     {
       src: "../../img/Karuzela/1.jpg",
@@ -43,7 +43,7 @@ const Microhome = () => {
 
   return (
     <>
-      <Chessboard boxArray={boxArr} />
+      <Chessboard boxArray={boxArr} ln={ln} />
     </>
   );
 };

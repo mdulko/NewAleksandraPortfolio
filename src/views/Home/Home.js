@@ -1,9 +1,9 @@
 import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import { Box } from "@material-ui/core";
-// import Carousel from "../../components/large/Carousel/Carousel";
-// import Title from "../../components/small/Title/Title";
-import Chessboard from "../../components/large/Chessboard/Cheesboard";
+import Carousel from "../../components/large/Carousel/Carousel";
+import Title from "../../components/small/Title/Title";
+// import Chessboard from "../../components/large/Chessboard/Cheesboard";
 
 const useStyles = makeStyles((theme) => ({
   mainBox: {
@@ -23,13 +23,12 @@ const images = [
   "../img/BlueHouse/9.jpg",
 ];
 
-const Home = () => {
+const Home = ({ ln }) => {
   const classes = useStyles();
-
   return (
     <Box className={classes.mainBox}>
-      {/* <Title>Title</Title>
-      <Carousel imgArray={images} /> */}
+      <Title>Title</Title>
+      <Carousel imgArray={images} ln={ln} />
     </Box>
   );
 };

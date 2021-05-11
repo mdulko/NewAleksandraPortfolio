@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import PropTypes from "prop-types";
 import { Box, CssBaseline, NoSsr, StylesProvider } from "@material-ui/core";
 import Nav from "../components/medium/Nav/Nav";
 import MainTheme from "../theme/MainTheme";
@@ -7,6 +6,7 @@ import { makeStyles } from "@material-ui/core/styles";
 import Footer from "../components/medium/Footer/Footer";
 import pl from "../translations/pl.json";
 import en from "../translations/en.json";
+import Routes from "../routes/Routing";
 
 const useStyles = makeStyles((theme) => ({
   mainBox: {
@@ -35,17 +35,13 @@ const MainTemplate = ({ children }) => {
           <CssBaseline />
           <Nav ln={ln} PL={PL} ENG={ENG} />
           <Box mb={8} ln={ln} className={classes.mainBox}>
-            {children}
+            <Routes ln={ln} />
           </Box>
           <Footer />
         </StylesProvider>
       </MainTheme>
     </NoSsr>
   );
-};
-
-MainTemplate.propTypes = {
-  children: PropTypes.element,
 };
 
 export default MainTemplate;

@@ -9,13 +9,13 @@ const DecorativeWall = lazy(() =>
   import("../../views/OtherProjects/DecorativeWall/DecorativeWall")
 );
 
-const OtherRoutes = () => (
+const OtherRoutes = ({ ln }) => (
   <Suspense fallback={<PageLoader />}>
     <Switch>
       <Route exact path={`/projects/other`} component={OtherProjectsHome} />
       <Route
         path={`/projects/other/decorative-wall-Magia`}
-        component={DecorativeWall}
+        component={() => <DecorativeWall ln={ln} />}
       />
     </Switch>
   </Suspense>

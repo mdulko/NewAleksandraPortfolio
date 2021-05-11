@@ -3,8 +3,6 @@ import { AppBar, makeStyles, Box, Button } from "@material-ui/core";
 import styled, { css } from "styled-components";
 import Text from "../../small/Text/Text";
 import themes from "../../../theme/theme";
-import pl from "../../../translations/pl.json";
-import en from "../../../translations/en.json";
 import MenuIcon from "@material-ui/icons/Menu";
 import CloseIcon from "@material-ui/icons/Close";
 import LinkTo from "../../small/LinkTo/LinkTo";

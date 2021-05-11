@@ -13,16 +13,22 @@ const SimpleSeat = lazy(() =>
 );
 const TearSeat = lazy(() => import("../../views/Furnitures/TearSeat/TearSeat"));
 
-const FurnituresRoutes = () => (
+const FurnituresRoutes = ({ ln }) => (
   <Suspense fallback={<PageLoader />}>
     <Switch>
       <Route exact path={`/projects/furnitures`} component={FurnituresHome} />
       <Route
         path={`/projects/furnitures/coffee-table`}
-        component={CoffeeTable}
+        component={() => <CoffeeTable ln={ln} />}
       />
-      <Route path={`/projects/furnitures/simple-seat`} component={SimpleSeat} />
-      <Route path={`/projects/furnitures/tear-seat`} component={TearSeat} />
+      <Route
+        path={`/projects/furnitures/simple-seat`}
+        component={() => <SimpleSeat ln={ln} />}
+      />
+      <Route
+        path={`/projects/furnitures/tear-seat`}
+        component={() => <TearSeat ln={ln} />}
+      />
     </Switch>
   </Suspense>
 );
