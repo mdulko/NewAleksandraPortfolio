@@ -20,10 +20,7 @@ const FormInput = styled(TextField)`
       border-color: ${themes.palette.gray};
       ::before {
         border-bottom: 1px solid gray;
-      }
-      :hover {
-        border-bottom: 1px solid ${themes.palette.white};
-      }
+        :hover {}
     }
     & .Mui-focused {
       color: ${themes.palette.white};

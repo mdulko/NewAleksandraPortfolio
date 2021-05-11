@@ -34,7 +34,7 @@ const MainTemplate = ({ children }) => {
         <StylesProvider>
           <CssBaseline />
           <Nav ln={ln} PL={PL} ENG={ENG} />
-          <Box mb={8} ln={ln} className={classes.mainBox}>
+          <Box mb={8} className={classes.mainBox}>
             <Routes ln={ln} />
           </Box>
           <Footer />

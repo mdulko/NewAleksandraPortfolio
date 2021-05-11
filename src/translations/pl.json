@@ -1,4 +1,5 @@
 {
+  "language": "pl",
   "navTopics": {
     "home": { "name": "Strona Główna", "to": "/" },
     "projects": { "name": "Projekty", "to": "/projects" },
@@ -61,16 +62,16 @@
     ],
     [
       {
-        "name": "Reading Room",
+        "name": "Czytelnia",
         "url": "/projects/rooms/reading-room",
         "description": "Założeniem projektu było zagospodarowanie przestrzeni publicznej w formie czytelni. Jest to miejsce specjalistyczne, gdzie znajdują się książki, audiobooki, publikacje i albumy, wyłącznie o tematyce botanicznej. Czytelnia botaniczna swoją kolorystyką i formą ma za zadanie odprężać i wyciszać. Celowy zabieg ustawienia siedzisk ma za zadanie tworzyć dodatkowy komfort dla czytelnika, tak, żeby każdy mógł znaleźć miejsce dla siebie. Główną inspiracją projektu była analiza struktur roślin pod mikroskopem. Ich organiczna forma nakierowała mnie do zaprojektowaia przestrzeni o charakterze płynnym, falistym i lekkim. Wnętrza są wypełnione tkaninami począwszy od posadzki kończąc na siedziskach w kontraście z metalowymi rurkami w barwach natury. Tworzą one formę, w której znajdują się miejsca przeznaczone na książki."
       },
       {
-        "name": "Kuchnia nr.1 - wzór",
+        "name": "Kuchnia wzór 1.",
         "url": "/projects/rooms/kitchen-design-1"
       },
       {
-        "name": "Kuchnia nr.2 - wzór",
+        "name": "Kuchnia wzór 2.",
         "url": "/projects/rooms/kitchen-design-2"
       }
     ]

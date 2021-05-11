@@ -1,49 +1,29 @@
+import { Container } from "@material-ui/core";
 import React from "react";
-import Chessboard from "../../../components/large/Chessboard/Cheesboard";
+import Carousel from "../../../components/large/Carousel/Carousel";
+import Text from "../../../components/small/Text/Text";
+import Title from "../../../components/small/Title/Title";
 
 const Microhome = ({ ln }) => {
-  const boxArr = [
-    {
-      src: "../../img/Karuzela/1.jpg",
-      title: "Strefa wejściowa",
-      titleEng: "Entrance zone",
-    },
-    { src: "../../img/Karuzela/2.jpg" },
-    {
-      src: "../../img/Karuzela/3.jpg",
-      title: "Strefa główna",
-      titleEng: "Main zone",
-    },
-    { src: "../../img/Karuzela/4.jpg" },
-    {
-      src: "../../img/Karuzela/5.jpg",
-      title: "Strefa techniczna",
-      titleEng: "Technical zone",
-    },
-    { src: "../../img/Karuzela/5a.jpg" },
-    {
-      src: "../../img/Karuzela/6.jpg",
-      title: "mini lab - Strefa kreatywna",
-      titleEng: "Creative zone",
-    },
-    { src: "../../img/Karuzela/7.jpg" },
-    {
-      src: "../../img/Karuzela/8.jpg",
-      title: "Warsztat",
-      titleEng: "Workshop",
-    },
-    { src: "../../img/Karuzela/9.jpg" },
-    {
-      src: "../../img/Karuzela/10.jpg",
-      title: "Rysunki techniczne",
-      titleEng: "Technical section",
-    },
-    { src: "../../img/Karuzela/11.jpg" },
+  const images = [
+    "../../img/BlueHouse/1.jpg",
+    "../../img/BlueHouse/2.jpg",
+    "../../img/BlueHouse/3.jpg",
+    "../../img/BlueHouse/4.jpg",
+    "../../img/BlueHouse/5.jpg",
+    "../../img/BlueHouse/11.jpg",
+    "../../img/BlueHouse/7.jpg",
+    "../../img/BlueHouse/8.jpg",
+    "../../img/BlueHouse/9.jpg",
   ];
 
   return (
     <>
-      <Chessboard boxArray={boxArr} ln={ln} />
+      <Container maxWidth="xl">
+        <Title>{ln.projects[0][0].title}</Title>
+        <Text align="justify"> {ln.projects[0][0].description} </Text>
+      </Container>
+      <Carousel imgArray={images} ln={ln} list />
     </>
   );
 };

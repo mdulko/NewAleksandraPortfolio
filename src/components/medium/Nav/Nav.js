@@ -7,6 +7,8 @@ import MenuIcon from "@material-ui/icons/Menu";
 import CloseIcon from "@material-ui/icons/Close";
 import LinkTo from "../../small/LinkTo/LinkTo";
 import ImgComp from "../../small/ImgComp/ImgComp";
+import lnPL from "../../../images/PL.png";
+import lnENG from "../../../images/UK.png";
 
 const AppBarStyled = styled(AppBar)`
   ${({ theme }) => css`
@@ -262,10 +264,10 @@ const Nav = ({ ln, PL, ENG }) => {
 
           <Box className={classes.language}>
             <Box className={classes.lnItem} onClick={PL}>
-              <ImgComp src="./img/PL.png" alt="" />
+              <ImgComp src={lnPL} alt="" />
             </Box>
             <Box className={classes.lnItem} onClick={ENG}>
-              <ImgComp src="./img/UK.png" alt="" />
+              <ImgComp src={lnENG} alt="" />
             </Box>
           </Box>
         </Box>

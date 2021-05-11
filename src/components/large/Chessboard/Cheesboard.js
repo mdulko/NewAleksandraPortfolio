@@ -51,7 +51,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-const Chessboard = ({ boxArray, language, ln }) => {
+const Chessboard = ({ boxArray, descripiton, ln }) => {
   const classes = useStyles();
   const stylesEven = {
     backgroundColor: "#21202670",
@@ -70,7 +70,6 @@ const Chessboard = ({ boxArray, language, ln }) => {
       (index % 2 === 0 ? box.push([key]) : box[box.length - 1].push(key)) && box
     );
   }, []);
-
   const showImages = splitArr.map((item, index) => {
     // console.log(index % 2, item[1]);
     let n = 0;
@@ -90,7 +89,7 @@ const Chessboard = ({ boxArray, language, ln }) => {
     return !(odd === null) ? (
       <Box className={classes.rowBox} key={index}>
         <Text variant="h4" className={classes.topicLeft}>
-          {language ? item[n].title : item[n].titleEng}
+          {ln.language === "pl" ? item[n].title : item[n].titleEng}
         </Text>
         <Box key={index} className={classes.imgBox} style={stylesOdd}>
           {odd}
@@ -99,7 +98,7 @@ const Chessboard = ({ boxArray, language, ln }) => {
     ) : (
       <Box className={classes.rowBox} key={index}>
         <Text variant="h4" className={classes.topicRight}>
-          {language ? item[n].title : item[n].titleEng}
+          {ln.language === "pl" ? item[n].title : item[n].titleEng}
         </Text>
         <Box key={index} className={classes.imgBox} style={stylesEven}>
           {even}
@@ -112,16 +111,11 @@ const Chessboard = ({ boxArray, language, ln }) => {
       <Container maxWidth="xl">
         <Title>mini LAB</Title>
         <div className="underline"></div>
-        <Text align="justify">{ln.projects[2].description}</Text>
-        <Text align="justify">
-          Estetyczne zestawienie kolorystyczne oraz czytelne formy przestrzenne
-          nadadzą wnętrzom charakteru, w których dziecko nie będzie rozproszone,
-          lecz skupione i chętne do działania. Droga procesu projektowego od
-          idei, poprzez projektowanie ma za zadanie sprawić, by dziecko czułoby
-          się równie ważne jak prawdziwy projektant. W ten sposób powinno
-          zaowocować poprawę samooceny, wspólnej integracji, rozwoju wrażliwości
-          i swobodnej twórczości nawet u najmłodszych.
-        </Text>
+        {descripiton.map((item, index) => (
+          <Text align="justify" key={index}>
+            {item}
+          </Text>
+        ))}
       </Container>
       <Box className={classes.columnsBox}>{showImages}</Box>
     </>
@@ -136,6 +130,7 @@ Chessboard.propTypes = {
       titleEng: PropTypes.string,
     })
   ),
+  descripiton: PropTypes.arrayOf(PropTypes.string),
 };
 
 export default Chessboard;
