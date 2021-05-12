@@ -4,6 +4,7 @@ import { Box, Container, makeStyles } from "@material-ui/core";
 import Text from "../../small/Text/Text";
 import Title from "../../small/Title/Title";
 import ImgComp from "../../small/ImgComp/ImgComp";
+import Description from "../../small/Description/Description";
 
 const useStyles = makeStyles((theme) => ({
   columnsBox: {
@@ -112,9 +113,7 @@ const Chessboard = ({ boxArray, descripiton, ln }) => {
         <Title>mini LAB</Title>
         <div className="underline"></div>
         {descripiton.map((item, index) => (
-          <Text align="justify" key={index}>
-            {item}
-          </Text>
+          <Description key={index}>{item}</Description>
         ))}
       </Container>
       <Box className={classes.columnsBox}>{showImages}</Box>

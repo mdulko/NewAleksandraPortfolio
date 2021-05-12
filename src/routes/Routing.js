@@ -6,7 +6,6 @@ import ProjectsRoutes from "./projectsRoutes";
 const Home = lazy(() => import("../views/Home/Home"));
 const About = lazy(() => import("../views/About/About"));
 const Contact = lazy(() => import("../views/Contact/Contact"));
-
 const NotFound = lazy(() => import("../views/NotFound/NotFound"));
 
 const Routes = ({ ln }) => (

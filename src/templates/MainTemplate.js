@@ -7,6 +7,7 @@ import Footer from "../components/medium/Footer/Footer";
 import pl from "../translations/pl.json";
 import en from "../translations/en.json";
 import Routes from "../routes/Routing";
+import MoveToTop from "../components/small/MoveToTop/MoveToTop";
 
 const useStyles = makeStyles((theme) => ({
   mainBox: {
@@ -18,7 +19,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-const MainTemplate = ({ children }) => {
+const MainTemplate = () => {
   const classes = useStyles();
   const [ln, setLanguage] = useState(pl);
 
@@ -37,6 +38,7 @@ const MainTemplate = ({ children }) => {
           <Box mb={8} className={classes.mainBox}>
             <Routes ln={ln} />
           </Box>
+          <MoveToTop />
           <Footer />
         </StylesProvider>
       </MainTheme>
