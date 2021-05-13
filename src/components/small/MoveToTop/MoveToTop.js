@@ -5,7 +5,7 @@ import { useWindowScroll } from "react-use";
 import ArrowUpwardIcon from "@material-ui/icons/ArrowUpward";
 
 const ScrollBox = styled(Box)`
-  ${() => css`
+  ${({ theme }) => css`
     position: fixed;
     display: flex;
     justify-content: center;
@@ -18,6 +18,12 @@ const ScrollBox = styled(Box)`
     border: 0;
     background-color: black;
     z-index: 1;
+    ${theme.breakpoints.down("lg")} {
+      right: 60px;
+    }
+    ${theme.breakpoints.down("md")} {
+      right: 30px;
+    }
   `}
 `;
 

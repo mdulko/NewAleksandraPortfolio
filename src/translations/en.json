@@ -80,7 +80,23 @@
     "name": "Aleksandra Klińska",
     "position": "Interior Designer",
     "description": "My name is Aleksandra Klińska, I am a Master's student at the Academy of Fine Arts in Gdansk at the Faculty of Architecture and Design. My passion is searching for forms, colors, structures, which together create a unique space. I like to gain experience in art. I am passionate about painting and creating analogue photographs.",
+    "shortDesc": "Hello, my name is Aleksandra and I come from Gorlice - not a big city in Malopolska province. I began my adventure with interiors in 2017 and it continues until now, I am currently a Master's student at the Academy of Fine Arts in Gdansk at the Faculty of Architecture and Design.",
     "skills": "Works in Programms"
+  },
+  "contact": {
+    "topInfo": "You can contact me through",
+    "bottomInfo": "Or by using the form below",
+    "info": [
+      { "name": "E-mail", "url": "/about" },
+      {
+        "name": "Linkedin",
+        "url": "https://www.linkedin.com/in/aleksandra-kli%C5%84ska-730283163/?trk=public-profile-join-page"
+      },
+      {
+        "name": "Facebook",
+        "url": "https://www.facebook.com/aleksandra.klinska.50/"
+      }
+    ]
   },
   "copyrights": "© 2020 Design & Developed by Michał Dulko. All rights reserved."
 }

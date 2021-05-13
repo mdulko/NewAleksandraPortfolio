@@ -8,10 +8,14 @@ import themes from "../../theme/theme";
 
 const useStyles = makeStyles((theme) => ({
   mainGrid: {
-    padding: theme.spacing(5, 0),
+    paddingTop: theme.spacing(5),
   },
   itemGrid: {
     paddingTop: theme.spacing(5),
+    [theme.breakpoints.down("md")]: {
+      paddingTop: theme.spacing(2),
+      paddingBottom: theme.spacing(2),
+    },
   },
   mainBox: {
     display: "flex",
@@ -24,7 +28,7 @@ const useStyles = makeStyles((theme) => ({
     "& img": {
       width: "60% !important",
     },
-    "&:nth-child(2n-1)": {
+    "&:nth-child(2n+1)": {
       alignSelf: "flex-end",
       flexDirection: "row-reverse",
     },
@@ -36,6 +40,17 @@ const useStyles = makeStyles((theme) => ({
     },
     "&:hover img": {
       filter: "blur(2px)",
+    },
+    [theme.breakpoints.down("md")]: {
+      width: "100%",
+      borderBottom: "none",
+      "& img": {
+        width: "50% !important",
+      },
+      "&:nth-child(2n+1)": {
+        alignSelf: "flex-end",
+        flexDirection: "row-reverse",
+      },
     },
   },
   blockText: {
@@ -55,6 +70,25 @@ const useStyles = makeStyles((theme) => ({
       backgroundColor: [themes.palette.black],
       transition: "transform 0.15s linear 0s",
       transform: "translate(-50%, 5px) scale(0)",
+    },
+    [theme.breakpoints.down("md")]: {
+      alignSelf: "center",
+      width: "50%",
+      textAlign: "center",
+      textDecoration: "none",
+      color: [themes.palette.black],
+      "&::after": {
+        content: `""`,
+        position: "relative",
+        bottom: "0px",
+        left: "50%",
+        display: "block",
+        width: "50%",
+        height: "2px",
+        backgroundColor: [themes.palette.black],
+        transition: "transform 0.15s linear 0s",
+        transform: "translate(-50%, 5px) scale(0)",
+      },
     },
   },
 }));

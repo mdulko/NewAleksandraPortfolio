@@ -83,5 +83,20 @@
     "shortDesc": "Heej, nazywam się Aleksandra i pochodzę z Gorlic - nieduże miasto w województwie Małopolskim. Przygodę z wnętrzami rozpoczęłam 2017 roku i trwa do teraz, aktualnie jestem studentką studiów magisterskich na Akademii Sztuk Pięknych w Gdańsku na Wydziale Architektury i Wzornictwa. ",
     "skills": "Używam programów"
   },
+  "contact": {
+    "topInfo": "Skontaktować się możesz poprzez",
+    "bottomInfo": "Albo za pomocą formularza poniżej",
+    "info": [
+      { "name": "E-mail", "url": "/about" },
+      {
+        "name": "Linkedin",
+        "url": "https://www.linkedin.com/in/aleksandra-kli%C5%84ska-730283163/?trk=public-profile-join-page"
+      },
+      {
+        "name": "Facebook",
+        "url": "https://www.facebook.com/aleksandra.klinska.50/"
+      }
+    ]
+  },
   "copyrights": "© 2021 Design & Developed by Michał Dulko. All rights reserved."
 }
