@@ -44,14 +44,18 @@ const socialData = [
   {
     logo: <FacebookIcon fontSize="large" />,
     label: "Aleksandra Klinska",
+    to: "https://www.facebook.com/aleksandra.klinska.50/",
   },
   {
     logo: <InstagramIcon fontSize="large" />,
     label: "k___aleksandra",
+    to: "https://www.instagram.com/k___aleksandra/",
   },
   {
     logo: <LinkedInIcon fontSize="large" />,
     label: "Aleksandra Klinska",
+    to:
+      "https://www.linkedin.com/in/aleksandra-kli%C5%84ska-730283163/?trk=public-profile-join-page",
   },
 ];
 
@@ -70,6 +74,7 @@ const Footer = () => {
                     key={index}
                     logo={item.logo}
                     label={item.label}
+                    link={item.to}
                   />
                 );
               })}

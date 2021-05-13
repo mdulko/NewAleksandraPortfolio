@@ -14,6 +14,7 @@ const themes = {
     black: "hsl(0, 0%, 0%)",
     red: "hsl(0, 71%, 34%)",
     onHover: "hsl(0, 0%, 91%)",
+    bgc: "hsl(250, 9%, 14%)",
   },
   typography: {
     fontFamily: "'Montserrat', sans-serif",

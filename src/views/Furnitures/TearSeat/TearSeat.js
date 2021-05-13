@@ -6,15 +6,15 @@ import Title from "../../../components/small/Title/Title";
 
 const TearSeat = ({ ln }) => {
   const content = [
-    {
-      img: "../../img/Siedzisko2/1.jpg",
-    },
-    {
-      img: "../../img/Siedzisko2/2.jpg",
-    },
-    {
-      img: "../../img/Siedzisko2/3.jpg",
-    },
+    // {
+    //   img: "../../img/Siedzisko2/1.jpg",
+    // },
+    // {
+    //   img: "../../img/Siedzisko2/2.jpg",
+    // },
+    // {
+    //   img: "../../img/Siedzisko2/3.jpg",
+    // },
     {
       img: "../../img/Siedzisko2/4.jpg",
     },

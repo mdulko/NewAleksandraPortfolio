@@ -6,6 +6,7 @@ import themes from "../../../theme/theme";
 const LinkStyled = styled(Link)`
   ${() => css`
     color: ${themes.palette.black};
+    cursor: pointer;
     :hover {
       color: ${themes.palette.red};
       text-decoration: none;

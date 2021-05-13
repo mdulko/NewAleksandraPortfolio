@@ -76,5 +76,11 @@
       }
     ]
   ],
+  "about": {
+    "name": "Aleksandra Klińska",
+    "position": "Projektantka wnętrz",
+    "description": "Nazywam się Aleksandra Klińska, jestem studentką studiów magisterskich na Akademii Sztuk Pięknych w Gdańsku na Wydziale Architektury i Wzornictwa. Moją pasją jest poszukiwanie form, barw, struktur, które wspólnie tworzą unikatową przestrzeń. Lubię zdobywać doświadczenie w sztuce. Z zamiłowania maluję i tworze zdjęcia analogowe.",
+    "skills": "Używam programów"
+  },
   "copyrights": "© 2020 Design & Developed by Michał Dulko. All rights reserved."
 }

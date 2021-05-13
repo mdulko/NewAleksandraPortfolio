@@ -38,11 +38,11 @@ const LogoWithLink = styled(Box)`
   `}
 `;
 
-const SocialMedia = ({ logo, label }) => {
+const SocialMedia = ({ logo, label, link }) => {
   return (
     <LogoWithLink>
       {logo}
-      <LinkTo label={label}></LinkTo>
+      <LinkTo to={link} label={label} />
     </LogoWithLink>
   );
 };
@@ -50,6 +50,7 @@ const SocialMedia = ({ logo, label }) => {
 SocialMedia.propTypes = {
   logo: PropTypes.element,
   label: PropTypes.string,
+  to: PropTypes.string,
 };
 
 export default SocialMedia;

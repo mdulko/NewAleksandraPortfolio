@@ -17,17 +17,17 @@ const KitchenTemplate1 = ({ ln }) => {
     {
       img: "../../img/Kuchnia1/4.jpg",
     },
-    {
-      img: "../../img/Kuchnia1/5.jpg",
-      title: "Rzuty Techniczne",
-      titleEng: "Technical section",
-    },
-    {
-      img: "../../img/Kuchnia1/6.jpg",
-    },
-    {
-      img: "../../img/Kuchnia1/7.jpg",
-    },
+    // {
+    //   img: "../../img/Kuchnia1/5.jpg",
+    //   title: "Rzuty Techniczne",
+    //   titleEng: "Technical section",
+    // },
+    // {
+    //   img: "../../img/Kuchnia1/6.jpg",
+    // },
+    // {
+    //   img: "../../img/Kuchnia1/7.jpg",
+    // },
   ];
 
   return (
