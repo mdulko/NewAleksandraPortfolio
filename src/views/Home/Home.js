@@ -112,9 +112,19 @@ const Home = ({ ln }) => {
       name: "Apartment realization",
     },
     {
+      src: "../../img/Fusy/2.jpg",
+      to: "/projects/visualizations/fusy",
+      name: "FUSY",
+    },
+    {
       src: "../../img/Stolik/1.jpg",
       to: "/projects/furnitures/coffee-table",
       name: "Coffee table",
+    },
+    {
+      src: "../../img/Harmony/1.jpg",
+      to: "/projects/furnitures/harmony",
+      name: "HARMONY",
     },
     {
       src: "../../img/Siedzisko2/5.jpg",

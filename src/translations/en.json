@@ -1,10 +1,22 @@
 {
   "language": "eng",
   "navTopics": {
-    "home": { "name": "Home", "to": "/" },
-    "projects": { "name": "Projects", "to": "/projects" },
-    "about": { "name": "About me", "to": "/about" },
-    "contact": { "name": "Contact", "to": "/contact" }
+    "home": {
+      "name": "Home",
+      "to": "/"
+    },
+    "projects": {
+      "name": "Projects",
+      "to": "/projects"
+    },
+    "about": {
+      "name": "About me",
+      "to": "/about"
+    },
+    "contact": {
+      "name": "Contact",
+      "to": "/contact"
+    }
   },
   "navProjetsTitles": [
     "Visualizations",
@@ -32,6 +44,11 @@
         "location": "Gdańsk, Żukowo",
         "area": "86m2",
         "destiny": "Design of an apartment for a four-person family"
+      },
+      {
+        "name": "FUSY",
+        "url": "/projects/visualizations/fusy",
+        "description": "Fusy - city in times of plague. Interior design of a commercial space in Gdynia. The theme of the task was to help to reflect on the impact of the pandemic on everyday life and the role of the architect in creating a \"new world\".  Analyzing the location and the tourist aspect, a design of a café was created, which could function in pandemic and post-pandemic times."
       }
     ],
     [
@@ -51,6 +68,11 @@
         "url": "/projects/furnitures/tear-seat",
         "description": "The design of DROP modular furniture resembling a drop of water was created for use in public places. The main design assumption was to enable the user to arrange the seats in their own creative arrangement. The collection of modular seats perfectly develops children's imagination, teaches creativity and cooperation. The collection consists of three basic modules of the same form and different heights: 30/40/45 cm. Stable seats are upholstered with high quality material (fabric Ballagie velvet col. 07, 19, 23).",
         "subDescription": "The body of the seat was inspired by natural forms of nature like a cone shape. It is made up of repetitive elements which, despite the increasing scale, form a complex, interesting form. Seat heights are varied for ergonomic reasons. They are designed for both children and adults. That is why DROP modular seats are comfortable and adapted for everyone. Thanks to the profiled shape, which is based on two circles, the seats can be combined with each other depending on the needs, creating many interesting compositions."
+      },
+      {
+        "name": "Harmony",
+        "url": "/projects/furnitures/harmony",
+        "description": "HARMONY chair was designed for people who need a comfortable and ergonomic seat, where you can work while using a laptop. Properly sculpted armrests will allow you to work in comfort, while the soft contoured backrest provides greater comfort, privacy and convenience."
       }
     ],
     [
@@ -87,7 +109,10 @@
     "topInfo": "You can contact me through",
     "bottomInfo": "Or by using the form below",
     "info": [
-      { "name": "E-mail", "url": "/about" },
+      {
+        "name": "E-mail",
+        "url": "/about"
+      },
       {
         "name": "Linkedin",
         "url": "https://www.linkedin.com/in/aleksandra-kli%C5%84ska-730283163/?trk=public-profile-join-page"

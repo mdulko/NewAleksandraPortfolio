@@ -32,7 +32,13 @@
         "location": "Gdańsk, Żukowo",
         "area": "86m2",
         "destiny": "Projekt mieszkania dla rodziny 4-osobowej"
+      },
+      {
+        "name": "FUSY",
+        "url": "/projects/visualizations/fusy",
+        "description": "Fusy - miasto w czasach zarazy. Projekt wnętrza lokalu usługowego w Gdyni. Tematyka zadania miała pomóc w rozważaniach o wpływie pandemii na życie codzienne oraz o roli architekta w tworzeniu ,,nowego świata\".  Analizując lokalizację oraz aspekt turystyczny powstał projekt kawiarni, który w założeniu mógłby funkcjonować w czasach pandemicznych i postpandemicznych."
       }
+
     ],
     [
       {
@@ -51,6 +57,11 @@
         "url": "/projects/furnitures/tear-seat",
         "description": "Projekt mebla modułowego DROP kształtem przypominający kroplę wody, powstał z przeznaczeniem do wykorzystania między innymi w miejscach publicznych. Głównym założeniem projektowym było umożliwienie użytkownikowi zaaranżowanie siedzisk w własny, kreatywny układ. Kolekcja siedzisk modułowych świetnie rozwija wyobraźnię dzieci, uczy kreatywności oraz współpracy. Kolekcja składa się z trzech podstawowych modułów o tej samej formie, natomiast o różnych wysokościach: 30/40/45 cm. Stabilne siedziska zostają obite materiałem o wysokiej jakości (tkanina Ballagie velvet col. 07, 19, 23).",
         "subDescription": "Bryła siedziska powstała z inspiracji naturalnymi formami przyrody jak kształt szyszki. Zbudowana jest ona z powtarzających się elementów, które pomimo zwiększającej się skali tworzą zespoloną, ciekawą formę. Wysokości siedzisk są zróżnicowane ze względów ergonomicznych. Przeznaczone są dla dzieci jak i dorosłych. Dlatego modułowe siedziska DROP są wygodne i dostosowane dla każdego. Dzięki wyprofilowanemu kształtowi, który powstał na bazie dwóch okręgów, siedziska można łączyć ze sobą w zależności od potrzeb, tworząc wiele ciekawych kompozycji."
+      },
+      {
+        "name": "Harmonia",
+        "url": "/projects/furnitures/harmony",
+        "description": "Fotel HARMONIA powstał z myślą o osobach, które potrzebują wygodnego i ergonomicznego siedziska, w którym będzie można pracować korzystając jednocześnie z laptopa. Odpowiednio wyrzeźbione podłokietniki pozwolą na swobodną pracę, miękkie wyprofilowane oparcie otula sprawiając większy komfort, prywatność oraz wygodę."
       }
     ],
     [
