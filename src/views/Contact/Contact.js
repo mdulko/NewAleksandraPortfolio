@@ -3,6 +3,7 @@ import { Container, Link, makeStyles } from "@material-ui/core";
 import Text from "../../components/small/Text/Text";
 import Title from "../../components/small/Title/Title";
 import themes from "../../theme/theme";
+import {useSelector} from "react-redux";
 
 const useStyles = makeStyles((theme) => ({
   name: {
@@ -19,7 +20,8 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-const Contact = ({ ln }) => {
+const Contact = () => {
+  const ln = useSelector(state => state.languageReducer)
   const classes = useStyles();
   return (
     <Container maxWidth="xl">

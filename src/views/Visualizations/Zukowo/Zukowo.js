@@ -1,8 +1,10 @@
 import React from "react";
 import Blocks from "../../../components/large/Blocks/Blocks";
 import Title from "../../../components/small/Title/Title";
+import {useSelector} from "react-redux";
 
-const Zukowo = ({ ln }) => {
+const Zukowo = () => {
+  const ln = useSelector(state => state.languageReducer)
   const blocksArray = [
     { src: "../../img/Zukowo/1.jpg", name: "Salon", nameEng: "Salon" },
     { src: "../../img/Zukowo/3.jpg", name: "Kuchnia", nameEng: "Kitchen" },

@@ -2,8 +2,10 @@ import { Container } from "@material-ui/core";
 import React from "react";
 import ImagesInColumn from "../../../components/large/ImagesInColumn/ImagesInColumn";
 import Title from "../../../components/small/Title/Title";
+import {useSelector} from "react-redux";
 
-const KitchenTemplate2 = ({ ln }) => {
+const KitchenTemplate2 = () => {
+  const ln = useSelector(state => state.languageReducer)
   const content = [
     {
       img: "../../img/Kuchnia2/1.jpg",

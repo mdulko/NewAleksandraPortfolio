@@ -8,25 +8,25 @@ import RoomsRoutes from "./projects/roomsRoutes";
 
 const Projects = lazy(() => import("../views/ProjectsHome/ProjectsHome"));
 
-const ProjectsRoutes = ({ ln }) => (
+const ProjectsRoutes = () => (
   <Suspense fallback={<PageLoader />}>
     <Switch>
       <Route exact path={`/projects`} component={Projects} />
       <Route
         path={`/projects/visualizations`}
-        component={() => <VisualizationRoutes ln={ln} />}
+        component={() => <VisualizationRoutes/>}
       />
       <Route
         path={`/projects/furnitures`}
-        component={() => <FurnituresRoutes ln={ln} />}
+        component={() => <FurnituresRoutes />}
       />
       <Route
         path={`/projects/other`}
-        component={() => <OtherRoutes ln={ln} />}
+        component={() => <OtherRoutes />}
       />
       <Route
         path={`/projects/rooms`}
-        component={() => <RoomsRoutes ln={ln} />}
+        component={() => <RoomsRoutes />}
       />
     </Switch>
   </Suspense>

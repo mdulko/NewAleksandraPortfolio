@@ -3,8 +3,10 @@ import {Container} from "@material-ui/core";
 import Title from "../../../components/small/Title/Title";
 import Text from "../../../components/small/Text/Text";
 import Carousel from "../../../components/large/Carousel/Carousel";
+import {useSelector} from "react-redux";
 
-const Harmony = ({ln}) => {
+const Harmony = () => {
+    const ln = useSelector(state => state.languageReducer)
     const images = [
         "../../img/Harmony/1.jpg",
         "../../img/Harmony/2.jpg",

@@ -3,8 +3,10 @@ import React from "react";
 import ImagesInColumn from "../../../components/large/ImagesInColumn/ImagesInColumn";
 import Description from "../../../components/small/Description/Description";
 import Title from "../../../components/small/Title/Title";
+import {useSelector} from "react-redux";
 
-const TearSeat = ({ ln }) => {
+const TearSeat = () => {
+    const ln = useSelector(state => state.languageReducer)
   const content = [
     // {
     //   img: "../../img/Siedzisko2/1.jpg",

@@ -3,8 +3,10 @@ import React from "react";
 import Carousel from "../../../components/large/Carousel/Carousel";
 import Text from "../../../components/small/Text/Text";
 import Title from "../../../components/small/Title/Title";
+import {useSelector} from "react-redux";
 
-const CoffeeTable = ({ ln }) => {
+const CoffeeTable = () => {
+    const ln = useSelector(state => state.languageReducer)
   const images = [
     "../../img/Stolik/1.jpg",
     "../../img/Stolik/2.jpg",

@@ -3,8 +3,10 @@ import React from "react";
 import Carousel from "../../../components/large/Carousel/Carousel";
 import Description from "../../../components/small/Description/Description";
 import Title from "../../../components/small/Title/Title";
+import {useSelector} from "react-redux";
 
-const ReadingRoom = ({ ln }) => {
+const ReadingRoom = () => {
+    const ln = useSelector(state => state.languageReducer)
   const images = [
     "../../img/Czytelnia/1.jpg",
     "../../img/Czytelnia/2.jpg",

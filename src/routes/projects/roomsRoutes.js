@@ -13,21 +13,21 @@ const KitchenTemplate2 = lazy(() =>
   import("../../views/Rooms/KitchenTemplate2/KitchenTemplate2")
 );
 
-const RoomsRoutes = ({ ln }) => (
+const RoomsRoutes = () => (
   <Suspense fallback={<PageLoader />}>
     <Switch>
       <Route exact path={`/projects/rooms`} component={RoomsHome} />
       <Route
         path={`/projects/rooms/reading-room`}
-        component={() => <ReadingRoom ln={ln} />}
+        component={<ReadingRoom/>}
       />
       <Route
         path={`/projects/rooms/kitchen-design-1`}
-        component={() => <KitchenTemplate1 ln={ln} />}
+        component={<KitchenTemplate1/>}
       />
       <Route
         path={`/projects/rooms/kitchen-design-2`}
-        component={() => <KitchenTemplate2 ln={ln} />}
+        component={<KitchenTemplate2/>}
       />
     </Switch>
   </Suspense>

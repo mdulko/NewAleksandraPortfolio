@@ -16,7 +16,7 @@ const Zukowo = lazy(() => import("../../views/Visualizations/Zukowo/Zukowo"));
 const Fusy = lazy(() => import("../../views/Visualizations/Fusy/Fusy"));
 
 
-const VisualizationRoutes = ({ ln }) => (
+const VisualizationRoutes = () => (
   <Suspense fallback={<PageLoader />}>
     <Switch>
       <Route
@@ -26,19 +26,19 @@ const VisualizationRoutes = ({ ln }) => (
       />
       <Route
         path={`/projects/visualizations/microhome-2020`}
-        component={() => <Microhome ln={ln} />}
+        component={() => <Microhome />}
       />
       <Route
         path={`/projects/visualizations/minilab`}
-        component={() => <Minilab ln={ln} />}
+        component={() => <Minilab />}
       />
       <Route
         path={`/projects/visualizations/zukowo`}
-        component={() => <Zukowo ln={ln} />}
+        component={() => <Zukowo />}
       />
       <Route
           path={`/projects/visualizations/fusy`}
-          component={() => <Fusy ln={ln} />}
+          component={() => <Fusy />}
       />
     </Switch>
   </Suspense>

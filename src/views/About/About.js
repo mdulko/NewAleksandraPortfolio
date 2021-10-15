@@ -5,6 +5,7 @@ import ImgComp from "../../components/small/ImgComp/ImgComp";
 import Text from "../../components/small/Text/Text";
 import Title from "../../components/small/Title/Title";
 import themes from "../../theme/theme";
+import {useSelector} from "react-redux";
 
 const useStyles = makeStyles((theme) => ({
   mainGrid: {
@@ -24,7 +25,7 @@ const content = [
   {
     name: "Wiek",
     nameEng: "Age",
-    answer: "23",
+    answer: "24",
   },
   {
     name: "Adres",
@@ -54,7 +55,8 @@ const skills = [
   "../../img/5.png",
 ];
 
-const About = ({ ln }) => {
+const About = () => {
+  const ln = useSelector(state => state.languageReducer)
   const classes = useStyles();
   return (
     <Container maxWidth="xl">

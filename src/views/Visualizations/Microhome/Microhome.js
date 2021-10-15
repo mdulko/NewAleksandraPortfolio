@@ -3,8 +3,10 @@ import React from "react";
 import Carousel from "../../../components/large/Carousel/Carousel";
 import Text from "../../../components/small/Text/Text";
 import Title from "../../../components/small/Title/Title";
+import {useSelector} from "react-redux";
 
-const Microhome = ({ ln }) => {
+const Microhome = () => {
+  const ln = useSelector(state => state.languageReducer)
   const images = [
     "../../img/BlueHouse/1.jpg",
     "../../img/BlueHouse/2.jpg",

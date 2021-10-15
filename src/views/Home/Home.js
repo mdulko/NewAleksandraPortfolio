@@ -5,6 +5,7 @@ import ImgComp from "../../components/small/ImgComp/ImgComp";
 import Title from "../../components/small/Title/Title";
 import Text from "../../components/small/Text/Text";
 import themes from "../../theme/theme";
+import {useSelector} from "react-redux";
 
 const useStyles = makeStyles((theme) => ({
   mainGrid: {
@@ -93,8 +94,9 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-const Home = ({ ln }) => {
+const Home = () => {
   const classes = useStyles();
+  const ln = useSelector(state => state.languageReducer)
   const images = [
     {
       src: "../../img/BlueHouse/1.jpg",

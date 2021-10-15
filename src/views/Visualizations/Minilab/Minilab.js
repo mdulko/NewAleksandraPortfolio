@@ -1,7 +1,9 @@
 import React from "react";
 import Chessboard from "../../../components/large/Chessboard/Cheesboard";
+import {useSelector} from "react-redux";
 
-const Minilab = ({ ln }) => {
+const Minilab = () => {
+  const ln = useSelector(state => state.languageReducer)
   const boxArr = [
     {
       src: "../../img/Karuzela/1.jpg",
